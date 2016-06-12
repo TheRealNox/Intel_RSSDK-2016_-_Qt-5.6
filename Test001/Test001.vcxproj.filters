@@ -33,13 +33,37 @@
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="Source Files\Main Widgets">
+      <UniqueIdentifier>{23618e66-6a3d-4366-9013-9811df279d47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main Widgets">
+      <UniqueIdentifier>{413f3b7c-fd09-4997-9fc4-cf1018a1cc04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helpers">
+      <UniqueIdentifier>{030f9a5c-7483-441c-ac02-3a35dc52b20e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Helpers">
+      <UniqueIdentifier>{ba9b6d6c-8f5a-47d4-a016-53e41b9ae312}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Handlers">
+      <UniqueIdentifier>{ad657e71-30be-420e-9532-69c78457918f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Handlers">
+      <UniqueIdentifier>{f9339864-91bb-44bc-b0f2-f1349b50de43}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_MainWindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
     <ClCompile Include="MainWindow.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Main Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceHelper.cpp">
+      <Filter>Source Files\Helpers</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_MainWindow.cpp">
       <Filter>Generated Files\Debug</Filter>
@@ -47,24 +71,36 @@
     <ClCompile Include="GeneratedFiles\Release\moc_MainWindow.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\qrc_MainWindow.cpp">
-      <Filter>Generated Files</Filter>
+    <ClCompile Include="RecognitionHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_RecognitionHandler.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_RecognitionHandler.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="MainWindow.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
     <CustomBuild Include="MainWindow.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
     <CustomBuild Include="MainWindow.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="MainWindow.h">
+      <Filter>Header Files\Main Widgets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RecognitionHandler.h">
+      <Filter>Header Files\Handlers</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_MainWindow.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceHelper.h">
+      <Filter>Header Files\Helpers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

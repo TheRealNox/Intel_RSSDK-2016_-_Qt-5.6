@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>600</width>
-    <height>400</height>
+    <height>231</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,15 +15,59 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="1">
-     <widget class="QComboBox" name="audioSourcesComboBox"/>
+    <item row="3" column="0">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
     </item>
     <item row="0" column="0">
-     <widget class="QLabel" name="audioSourceLabel">
-      <property name="text">
-       <string>Audio source(s):</string>
+     <widget class="QGroupBox" name="general">
+      <property name="title">
+       <string>General Settings</string>
       </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="audioSourceLabel">
+         <property name="text">
+          <string>Audio source(s):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="audioSourcesComboBox"/>
+       </item>
+      </layout>
      </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QGroupBox" name="speechRecognition">
+      <property name="title">
+       <string>Speech Recognition Settings</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QLabel" name="speechLanguagesLabel">
+         <property name="text">
+          <string>Speech language(s) available(s):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="speechLanguagesComboBox"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPlainTextEdit" name="consoleDebugView"/>
     </item>
    </layout>
   </widget>
