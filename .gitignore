@@ -45,3 +45,6 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+/Test001/x64/Debug
+*.opensdf
+*.sdf
